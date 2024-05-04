@@ -10,8 +10,8 @@ Partial Public Class App
 	End Sub
 
 	Public Overrides Sub OnFrameworkInitializationCompleted()
-		If TypeOf ApplicationLifetime Is IClassicDesktopStyleApplicationLifetime Then
-			Dim desktop = DirectCast(ApplicationLifetime, IClassicDesktopStyleApplicationLifetime)
+		Dim desktop = TryCast(ApplicationLifetime, IClassicDesktopStyleApplicationLifetime)
+		If desktop IsNot Nothing Then
 			desktop.MainWindow = New MainWindow
 		End If
 

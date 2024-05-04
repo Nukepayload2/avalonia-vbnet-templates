@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>FrameworkParameter</TargetFramework>
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <!--#if (UseCompiledBindings) -->
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    <!--#endif -->
+    <RootNamespace>AvaloniaAppTemplate</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <AvaloniaResource Include="Assets\**" />
+  </ItemGroup>
+
+  <!--#if (!AvaloniaStableChosen) -->
+  <ItemGroup>
+    <TrimmerRootAssembly Include="Avalonia.Themes.Fluent" />
+  </ItemGroup>
+  <!--#endif -->
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="AvaloniaVersionTemplateParameter" />
+    <PackageReference Include="Avalonia.Desktop" Version="AvaloniaVersionTemplateParameter" />
+    <!--#if (AvaloniaStableChosen) -->
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="AvaloniaVersionTemplateParameter" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="AvaloniaVersionTemplateParameter" />
+    <!--#endif -->
+    <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="AvaloniaVersionTemplateParameter" />
+    <!--#if (ReactiveUIToolkitChosen) -->
+    <PackageReference Include="Avalonia.ReactiveUI" Version="AvaloniaVersionTemplateParameter" />
+    <!--#elif (CommunityToolkitChosen)-->
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
+    <!--#endif -->
+    <PackageReference Include="Nukepayload2.SourceGenerators.AvaloniaUI" Version="1.0.0" />
+  </ItemGroup>
+  
+  <!--Globbing-->
+  <ItemGroup>
+    <Compile Remove="**\*.axaml.vb"/>
+    <Compile Include="**\*.axaml.vb">
+      <DependentUpon>%(Filename)</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>

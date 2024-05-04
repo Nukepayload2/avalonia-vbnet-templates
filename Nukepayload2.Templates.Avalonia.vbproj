@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
@@ -18,7 +18,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="templates\visualbasic\app\**\*" Exclude="templates\visualbasic\**\.vs\**;templates\visualbasic\**\bin\**;templates\visualbasic\**\obj\**" />
+    <TranslatedTemplates Include="templates\visualbasic\app\**\*"/>
+    <TranslatedTemplates Include="templates\visualbasic\app-mvvm\**\*"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="@(TranslatedTemplates)"
+             Exclude="templates\visualbasic\**\.vs\**;templates\visualbasic\**\bin\**;templates\visualbasic\**\obj\**" />
     <Compile Remove="**\*" />
   </ItemGroup>
 
