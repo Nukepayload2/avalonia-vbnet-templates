@@ -1,7 +1,7 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "AvaloniaUI,Nukepayload2",
-  "classifications": [ "Desktop", "Xaml", "Avalonia", "VB", "Windows", "Linux", "macOS" ],
+  "classifications": [ "Desktop", "Xaml", "Avalonia", "Windows", "Linux", "macOS" ],
   "description": "A cross-platform Avalonia UI Application targeting Desktop using Visual Basic",
   "groupidentity": "Avalonia.App.VB",
   "identity": "Avalonia.App.VB",

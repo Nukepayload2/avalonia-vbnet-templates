@@ -24,14 +24,14 @@ The templates should now be available in `dotnet new list`:
 ```
 Template Name                        Short Name                 Language  Tags
 -----------------------------------  -------------------------  --------  -----------------------------------------
-Avalonia .NET App                    avalonia.app.vb               VB   Desktop/Xaml/Avalonia/VB/Windows/Linux/macOS
+Avalonia .NET App                    avalonia.app.vb               VB     Desktop/Xaml/Avalonia/Windows/Linux/macOS
+Avalonia .NET MVVM App               avalonia.mvvm.vb              VB	  Desktop/Xaml/Avalonia/Windows/Linux/macOS
 ```
 
 The following templates are being ported to VB
 ```
 Template Name                        Short Name                 Language  Tags
 -----------------------------------  -------------------------  --------  -----------------------------------------
-Avalonia .NET MVVM App               avalonia.mvvm              [C#],F#   Desktop/Xaml/Avalonia/Windows/Linux/macOS
 Avalonia TemplatedControl            avalonia.templatedcontrol  [C#],F#   Desktop/Xaml/Avalonia/Windows/Linux/macOS
 Avalonia UserControl                 avalonia.usercontrol       [C#],F#   Desktop/Xaml/Avalonia/Windows/Linux/macOS
 Avalonia Window                      avalonia.window            [C#],F#   Desktop/Xaml/Avalonia/Windows/Linux/macOS
