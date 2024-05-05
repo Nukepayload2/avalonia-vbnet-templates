@@ -4,12 +4,7 @@ For more information about `dotnet new` templates see [here](https://blogs.msdn.
 
 ## Installing the templates
 
-### Dev packages
-Run `install-dev-templates.ps1`
-
-### Install from NuGet
-[![NuGet version (Nukepayload2.Templates.Avalonia)](https://img.shields.io/nuget/v/Nukepayload2.Templates.Avalonia.svg?style=flat-square)](https://www.nuget.org/packages/Nukepayload2.Templates.Avalonia/)
-
+### Install from NuGet (the package has not been published yet!)
 Run from a command line (`.NET 7+`):
 
 ```powershell
@@ -34,7 +29,3 @@ Avalonia TemplatedControl            avalonia.templatedcontrol.vb  VB	  Desktop/
 ```
 
 The "Avalonia Cross Platform Application" template is not planned to be converted to VB. Because it has some limitations in pure VB solutions. It's recommended to create the Android and iOS parts with C# templates and use VB in other parts.
-
-## Avalonia compatibility
-### Package 1.0.0 and its prerelease versions
-It's guaranteed to be compatible with `11.0.9`. Other versions may work, but they are not tested.

@@ -15,6 +15,9 @@
     <ContentTargetFolders>content</ContentTargetFolders>
     <NoDefaultExcludes>true</NoDefaultExcludes>
     <NoPackageAnalysis>true</NoPackageAnalysis>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <Authors>Nukepayload2,AvaloniaUI</Authors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,6 +32,9 @@
     <Content Include="@(TranslatedTemplates)"
              Exclude="templates\visualbasic\**\.vs\**;templates\visualbasic\**\bin\**;templates\visualbasic\**\obj\**" />
     <Compile Remove="**\*" />
+    <Content Include="readme.pkg.md">
+      <PackagePath>readme.md</PackagePath>
+    </Content>
   </ItemGroup>
 
 </Project>
