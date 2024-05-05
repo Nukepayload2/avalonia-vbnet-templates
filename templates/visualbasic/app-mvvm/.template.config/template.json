@@ -5,7 +5,7 @@
   "description": "A cross-platform Avalonia UI Application using the MVVM pattern targeting Desktop",
   "groupidentity": "Avalonia.App.Mvvm.VB",
   "identity": "Avalonia.App.Mvvm.VB",
-  "name": "Avalonia .NET MVVM App",
+  "name": "Avalonia VB.NET MVVM App",
   "preferNameDirectory": true,
   "shortName": "avalonia.mvvm.vb",
   "sourceName": "AvaloniaAppTemplate",
