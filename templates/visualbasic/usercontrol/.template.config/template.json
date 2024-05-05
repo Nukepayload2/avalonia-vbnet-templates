@@ -2,7 +2,7 @@
   "$schema": "http://json.schemastore.org/template",
   "author": "AvaloniaUI",
   "classifications": [ "Desktop", "Xaml", "Avalonia", "Windows", "Linux", "macOS" ],
-  "defaultName": "UserControl",
+  "defaultName": "UserControl1",
   "description": "An Avalonia UI UserControl",
   "groupidentity": "Avalonia.UserControl.VB",
   "identity": "Avalonia.UserControl.VB",
