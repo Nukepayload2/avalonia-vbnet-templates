@@ -1,6 +1,6 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "AvaloniaUI",
+  "author": "AvaloniaUI,Nukepayload2",
   "classifications": [ "Desktop", "Xaml", "Avalonia", "Windows", "Linux", "macOS" ],
   "defaultName": "Window1",
   "description": "An Avalonia UI Window",
