@@ -28,13 +28,7 @@ Avalonia .NET App                    avalonia.app.vb               VB     Deskto
 Avalonia .NET MVVM App               avalonia.mvvm.vb              VB	  Desktop/Xaml/Avalonia/Windows/Linux/macOS
 Avalonia UserControl                 avalonia.usercontrol.vb       VB	  Desktop/Xaml/Avalonia/Windows/Linux/macOS
 Avalonia Window                      avalonia.window.vb            VB	  Desktop/Xaml/Avalonia/Windows/Linux/macOS
-```
-
-The following templates are being ported to VB
-```
-Template Name                        Short Name                 Language  Tags
------------------------------------  -------------------------  --------  -----------------------------------------
-Avalonia TemplatedControl            avalonia.templatedcontrol  [C#],F#   Desktop/Xaml/Avalonia/Windows/Linux/macOS
+Avalonia TemplatedControl            avalonia.templatedcontrol.vb  VB	  Desktop/Xaml/Avalonia/Windows/Linux/macOS
 ```
 
 The "Avalonia Cross Platform Application" template is not planned to be converted to VB. Because it has some limitations in pure VB solutions. It's recommended to create the Android and iOS parts with C# templates and use VB in other parts.
