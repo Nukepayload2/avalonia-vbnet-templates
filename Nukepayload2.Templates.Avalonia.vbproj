@@ -20,6 +20,8 @@
   <ItemGroup>
     <TranslatedTemplates Include="templates\visualbasic\app\**\*"/>
     <TranslatedTemplates Include="templates\visualbasic\app-mvvm\**\*"/>
+    <TranslatedTemplates Include="templates\visualbasic\window\**\*"/>
+    <TranslatedTemplates Include="templates\visualbasic\usercontrol\**\*"/>
   </ItemGroup>
 
   <ItemGroup>
