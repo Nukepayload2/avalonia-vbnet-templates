@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.1.0</PackageVersion>
     <PackageId>Nukepayload2.Templates.Avalonia</PackageId>
     <Title>Avalonia Visual Basic Templates</Title>
     <Description>VB Templates for creating Avalonia applications and libraries.</Description>

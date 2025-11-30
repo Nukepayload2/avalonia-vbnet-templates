@@ -31,10 +31,18 @@
         {
           "choice": "net8.0",
           "description": "Target net8.0"
+        },
+        {
+          "choice": "net9.0",
+          "description": "Target net9.0"
+        },
+        {
+          "choice": "net10.0",
+          "description": "Target net10.0"
         }
       ],
       "replaces": "FrameworkParameter",
-      "defaultValue": "net8.0"
+      "defaultValue": "net10.0"
     },
     "skipRestore": {
       "type": "parameter",
@@ -52,16 +60,16 @@
           "description": "Target 0.10.21"
         },
         {
-          "choice": "11.0.9",
-          "description": "Target 11.0.9 (Latest stable)"
+          "choice": "11.3.9",
+          "description": "Target 11.3.9"
         }
       ],
       "replaces": "AvaloniaVersionTemplateParameter",
-      "defaultValue": "11.0.9"
+      "defaultValue": "11.3.9"
     },
     "AvaloniaStableChosen": {
       "type": "computed",
-      "value": "(AvaloniaVersion == \"11.0.9\")"
+      "value": "(AvaloniaVersion == \"11.3.9\")"
     },
     "UseCompiledBindings": {
       "type": "parameter",
@@ -69,7 +77,7 @@
       "datatype": "bool",
       "displayName": "Use compiled Bindings",
       "defaultValue": "true",
-      "isEnabled": "(AvaloniaVersion == \"11.0.9\")"
+      "isEnabled": "(AvaloniaVersion == \"11.3.9\")"
     },
     "HostIdentifier": {
       "type": "bind",
