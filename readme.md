@@ -38,3 +38,6 @@ The "Avalonia Cross Platform Application" template is not planned to be converte
 ## Avalonia compatibility
 ### Package 1.0.0 and its prerelease versions
 It's guaranteed to be compatible with `11.0.9`. Other versions may work, but they are not tested.
+
+### Package 1.1.0
+Tested with Avalonia `11.3.9` and .NET 10
