@@ -148,3 +148,8 @@ Create-And-Build "avalonia.xplat" "AvaloniaXplat" "F#" "cb" "true" $binlog
 Create-And-Build "avalonia.xplat" "AvaloniaXplat" "F#" "cb" "false" $binlog
 Create-And-Build "avalonia.xplat" "AvaloniaXplat" "F#" "rvl" "true" $binlog
 Create-And-Build "avalonia.xplat" "AvaloniaXplat" "F#" "rvl" "false" $binlog
+
+# VB templates
+Create-And-Build "avalonia.app.vb" "AvaloniaApp" "VB" "av" "12.1.1" $binlog
+Create-And-Build "avalonia.app.vb" "AvaloniaApp" "VB" "av" "11.3.9" $binlog
+Create-And-Build "avalonia.mvvm.vb" "AvaloniaMvvm" "VB" "av" "12.1.1" $binlog

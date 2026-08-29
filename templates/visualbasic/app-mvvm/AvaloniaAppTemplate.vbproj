@@ -28,12 +28,20 @@
     <PackageReference Include="Avalonia.Themes.Fluent" Version="AvaloniaVersionTemplateParameter" />
     <PackageReference Include="Avalonia.Fonts.Inter" Version="AvaloniaVersionTemplateParameter" />
     <!--#endif -->
+    <!--#if (AvaloniaVersionIsAtLeast12) -->
+    <!--Condition below is needed to remove the diagnostics package from build output in Release configuration.-->
+    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="AvaloniaUI.DiagnosticsSupport" Version="2.2.3" />
+    <!--#endif -->
+    <!--#if (!AvaloniaVersionIsAtLeast12) -->
     <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
     <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="AvaloniaVersionTemplateParameter" />
-    <!--#if (ReactiveUIToolkitChosen) -->
+    <!--#endif -->
+    <!--#if (ReactiveUIToolkitChosen && AvaloniaVersionIsAtLeast12) -->
+    <PackageReference Include="ReactiveUI.Avalonia" Version="12.0.3" />
+    <!--#elif (ReactiveUIToolkitChosen) -->
     <PackageReference Include="Avalonia.ReactiveUI" Version="AvaloniaVersionTemplateParameter" />
     <!--#elif (CommunityToolkitChosen)-->
-    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
     <!--#endif -->
     <PackageReference Include="Nukepayload2.SourceGenerators.AvaloniaUI" Version="1.0.0" />
   </ItemGroup>

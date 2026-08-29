@@ -41,3 +41,6 @@ It's guaranteed to be compatible with `11.0.9`. Other versions may work, but the
 
 ### Package 1.1.0
 Tested with Avalonia `11.3.9` and .NET 10
+
+### Package 1.2.0
+Tested with Avalonia `12.1.1` and .NET 10

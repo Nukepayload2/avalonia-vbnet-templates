@@ -9,7 +9,7 @@ steps:
   - task: DotNetCoreCLI@2
     displayName: 'Pack Templates'
     inputs:
-      packagesToPack: 'Avalonia.Templates.csproj'
+      packagesToPack: 'Nukepayload2.Templates.Avalonia.vbproj'
       command: pack
       outputDir: '$(Build.ArtifactStagingDirectory)/NuGet'
       verbosityPack: normal
